@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="stylesheet/style1.css">
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-plus-medical'></i>
+      <span class="logo_name">Pharmacy</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="category.html" class="active">
+            <i class='bx bx-category'></i>
+            <span class="links_name">Category</span>
+          </a>
+        </li>
+        <li>
+          <a href="medicine.html" class="active">
+          <i class='bx bxs-capsule'></i>
+            <span class="links_name">Medicine</span>
+          </a>
+        </li>
+        <li>
+          <a href="customer.html">
+            <i class='bx bx-user'></i>
+            <span class="links_name">Customer</span>
+          </a>
+        </li>
+        <li>
+          <a href="supplier.html">
+            <i class='bx bx-user'></i>
+            <span class="links_name">Supplier</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-purchase-tag'></i>
+            <span class="links_name">Purchase</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="links_name">Stock</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-purchase-tag-alt'></i>
+            <span class="links_name">Sales</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+
+
+ 
+
+
+
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search" >
+        <i class='bx bx-search'  ></i>
+      </div>
+      <div class="login">
+        <a href="login.html"> Login</a>
+        
+      </div>
+    </nav>
+    
+    
+    <div class="container1">
+      <h2>Medicine</h2><hr><br>
+        <div class="text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Category :   <input type= “text1”></div>
+        <div class="text"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name : <input type= “text”></div>
+        <div class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Batch No :   <input type= “text”></div>
+        <div class="text">&nbsp;&nbsp; Buying Price :   <input type= “text”></div>
+        <div class="text">&nbsp;&nbsp;  Selling Price :  <input type= “text”></div>
+       
+        <input type="submit" value="Submit">
+    </div>  
+    
+    <img src="images/medicine2.jpg" alt="">
+      
+  
+
+
+  
+    
+  </section>
+  
+
+
+ 
+        
+        
+
+    
+     
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+ let sidebarBtn = document.querySelector(".sidebarBtn");
+ sidebarBtn.onclick = function() {
+   sidebar.classList.toggle("active");
+   if(sidebar.classList.contains("active")){
+   sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+ }else
+   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+ }
+  </script>
+
+</body>
+</html>
+
